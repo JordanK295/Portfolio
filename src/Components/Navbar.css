@@ -1,0 +1,66 @@
+.navbar {
+  height: 52px;
+  width: 100vw;
+  z-index: 5;
+  background-color: white;
+  top: 0;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.navbar .links {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  width: 500px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navbar .links div {
+  width: 25%;
+}
+
+.navbar .links div a {
+  margin: 0;
+  position: relative;
+  top: 33%;
+  color: grey;
+}
+
+.navbar .links div a:visited {
+  text-decoration: none;
+  color: grey;
+}
+
+.navbar .line {
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+}
+
+.Nav {
+  z-index: 2;
+}
+
+.Nav__logo {
+  margin-top: 12px;
+}
+
+.Nav__black {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.95);
+  width: 100vw;
+}
+/*# sourceMappingURL=Navbar.css.map */

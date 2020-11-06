@@ -1,0 +1,12 @@
+.card-list-container {
+  margin-top: 50px;
+}
+
+.card-row-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+  padding: 40px;
+}
