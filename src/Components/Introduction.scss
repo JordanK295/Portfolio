@@ -6,10 +6,54 @@
   width: 100vw;
   margin: 0;
   overflow-x: hidden;
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // z-index: -1;
+  .introduction-text {
+    text-align: center;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    p {
+      font-size: xx-large;
+      font-weight: 300;
+      margin: 0;
+      span {
+        color: white;
+        font-weight: 600;
+      }
+    }
+    .div-button {
+      margin: auto;
+      margin-top: 25px;
+      border: solid white 3px;
+      cursor: pointer;
+      padding: 15px;
+      appearance: none;
+      outline: none;
+      width: 180px;
+      p {
+        display: inline-block;
+        font-size: 22px;
+        transform: none;
+      }
+      .icon-container {
+        display: inline-block;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.div-button:hover {
+  color: grey;
+  background-color: white;
+  border: solid white 3px;
+}
+
+.div-button:hover .icon-container {
+  transform: rotateZ(90deg);
 }
 
 .block-spacer {
@@ -18,25 +62,6 @@
   width: 100vw;
   z-index: -1;
   margin: 0;
-}
-
-.introduction-text {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  p {
-    color: white;
-    font-size: xx-large;
-    font-weight: 300;
-    margin: 0;
-    span {
-      color: white;
-      font-weight: 600;
-    }
-  }
 }
 
 @keyframes gradient {
@@ -49,4 +74,8 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+.icon-container {
+  transition: all 0.4s ease;
 }

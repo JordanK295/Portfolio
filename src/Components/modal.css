@@ -1,0 +1,130 @@
+.opaque-background {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.4;
+  z-index: 999;
+}
+
+.modalContainer {
+  width: 700px;
+  z-index: 999;
+  color: black;
+  background-color: grey;
+  display: inline-block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.modalContainer .modalImageURL {
+  height: 450px;
+  width: 700px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.modalContainer .modalBottom {
+  padding: 11px 20px 20px 20px;
+}
+
+.modalContainer .modalBottom .modalHeader {
+  font-size: 29px;
+  display: block;
+  text-align: left;
+}
+
+.modalContainer .modalBottom .modalDescription {
+  font-size: 14.5px;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.modalContainer .modalBottom .bottom-bar {
+  height: 46.5px;
+  width: 100%;
+}
+
+.modalContainer .modalBottom .bottom-bar button {
+  float: right;
+}
+
+.modalContainer .modalBottom .bottom-bar .modalProjectLink {
+  font-size: 13.5px;
+  bottom: 0px;
+  text-decoration: none;
+  text-align: left;
+  float: left;
+  background-color: #e00d77;
+  padding: 15.25px;
+  display: inline;
+}
+
+.modalContainer .modalBottom .bottom-bar .modalProjectLink a {
+  text-decoration: none;
+  color: black;
+  height: 0;
+  width: 0;
+}
+
+.modalContainer .modalBottom .bottom-bar .modalProjectLink a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.modalContainer .modalBottom .bottom-bar .modalProjectLink img {
+  color: red;
+  height: 100%;
+  width: 100%;
+  float: left;
+}
+
+.modalContainer .modalBottom .bottom-bar .modalProjectLink div {
+  margin-left: 15px;
+  float: right;
+}
+
+.fa-github {
+  float: left;
+  margin-left: 20px;
+}
+
+.fa-github:hover {
+  color: #e00d77;
+}
+
+.modal-form {
+  position: relative;
+}
+
+.close-btn {
+  -webkit-transition: opacity 0.25s, -webkit-transform 0.25s;
+  transition: opacity 0.25s, -webkit-transform 0.25s;
+  transition: transform 0.25s, opacity 0.25s;
+  transition: transform 0.25s, opacity 0.25s, -webkit-transform 0.25s;
+  opacity: 0.7;
+  cursor: pointer;
+  font-size: 3em;
+  font-family: serif;
+  float: right;
+}
+
+.close-btn:before {
+  content: "\d7";
+}
+
+.close-btn:hover {
+  opacity: 1;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+/*# sourceMappingURL=modal.css.map */
