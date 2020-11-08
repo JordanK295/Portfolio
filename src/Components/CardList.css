@@ -6,7 +6,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 80%;
+  width: 90%;
   margin: auto;
-  padding: 40px;
+  padding: 10px;
+}
+
+.card-list-container h1 {
+  text-align: center;
+  color: rgb(99, 99, 99);
 }

@@ -12,7 +12,7 @@ export default function Introduction() {
           <p>I'm a junior software developer.</p>
           <div className="div-button">
             <p>View my work</p>
-            <div class="icon-container">
+            <div className="icon-container">
               <FontAwesomeIcon icon={faArrowRight} size="lg"/>
             </div>
           </div>

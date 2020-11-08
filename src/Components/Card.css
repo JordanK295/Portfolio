@@ -13,10 +13,10 @@
 }
 
 .card {
-  width: 360px;
-  height: 280px;
+  width: 450px;
+  height: 300px;
   border-radius: 15px;
-  padding: 1.5rem;
+  padding: 20px;
   background: white;
   position: relative;
   display: -webkit-box;
@@ -29,6 +29,7 @@
   transition: 0.4s ease-out;
   -webkit-box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 40px;
 }
 
 .card:hover {
@@ -85,6 +86,7 @@
 }
 
 .card .info h1 {
+  color: white;
   margin: 0px;
 }
 

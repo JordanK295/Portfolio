@@ -19,8 +19,8 @@ const Card = (props) => {
   const setShowModalFalse = () => setShowModal(false)
 
   return (
-    <div>
-      <div class="wrapper">
+    
+      <div>
         <div class="card card-container"><img src={ cardImageURL } />
           <div class="info">
             <h1>{ cardHeader }</h1>
@@ -28,7 +28,7 @@ const Card = (props) => {
             <button onClick={() => setShowModal(true)}>Learn More</button>
           </div>
         </div>
-      </div>
+
       {showModal ? <Modal 
         modalImageURL={ modalImageURL }
         modalHeader={ modalHeader }

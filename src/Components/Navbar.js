@@ -28,17 +28,18 @@ class Navbar extends React.Component {
   render(){
   return (
     <div>
-    <div className={`Nav ${this.state.nav && 'Nav__black'}`}>
-      <div className="navbar">
-      <div className="links">
-        <div><a href="" className="home">HOME</a></div>
-        <div><a href="" className="about">ABOUT</a></div>
-        <div><a href="" className="portfolio">PORTFOLIO</a></div>
-        <div><a href="" className="contact">CONTACT</a></div>
+      <div className={`Nav ${this.state.nav && 'Nav__black'}`}>
+          <div className="navbar">
+            <div className="links">
+              <div><a style={{color:'#E94C72'}} href="" className="home">HOME</a></div>
+              <div><a href="" className="about">ABOUT</a></div>
+              <div><a href="" className="portfolio">PORTFOLIO</a></div>
+              <div><a href="" className="contact">CONTACT</a></div>
+          </div>
+          {/* <div className="opacity"></div> */}
+            {/* <div className="line"></div> */}
+        </div>
       </div>
-      <div className="line"></div>
-    </div>
-    </div>
     </div>
   );}
 }

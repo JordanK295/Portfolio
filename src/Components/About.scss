@@ -1,5 +1,65 @@
+$base-color: #808080;
+$base-color2: #3b3b3b;
+
 .about {
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
+  text-align: center;
+  h1 {
+    display: inline-block;
+    margin: auto;
+    color: $base-color2;
+    .bar {
+      height: 5px;
+      background-color: $base-color2;
+      width: 100%;
+    }
+  }
+  h2 {
+    color: $base-color;
+    font-size: 1.5em;
+    max-width: 50%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .flexxer {
+    margin: auto;
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    .bio {
+      width: 40%;
+      h3 {
+        color: $base-color2;
+      }
+      p {
+        color: $base-color;
+      }
+    }
+    .tech-stack {
+      width: 40%;
+      h3 {
+        color: $base-color2;
+      }
+      .icons-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        text-align: center;
+        div {
+          svg {
+            width: 140px;
+            padding: 15px;
+            margin-left: 20px;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
 }

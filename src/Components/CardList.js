@@ -18,10 +18,10 @@ export default function CardList() {
                     modalGitHubLink=""
                 />
                 <Card cardImageURL="/Assets/Simpsons_Screenshot.png"
-                    cardHeader="HELLO TESTING!dsa assa"
+                    cardHeader="Simpsons Time Trial"
                     cardLanguages="HTML / CSS / JAVASCRIPT"
                     modalImageURL="/Images/nice_food.png"
-                    modalHeader="MODAL HIHI"
+                    modalHeader="Simpsons Time Trial"
                     modalDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"
                     modalProjectLink="https://www.youtube.com/"
                     modalGitHubLink=""
@@ -35,8 +35,6 @@ export default function CardList() {
                     modalProjectLink=""
                     modalGitHubLink=""
                 />
-                </div>
-                <div className="card-row-container wrapper">
                 <Card cardImageURL=""
                     cardHeader="HELLO TESTING!"
                     cardLanguages=""
