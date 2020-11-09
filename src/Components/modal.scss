@@ -45,71 +45,48 @@
       margin-bottom: 30px;
     }
     .bottom-bar {
-      height: 46.5px;
+      height: 36.5px;
       width: 100%;
-      button {
-        float: right;
-      }
-      .modalProjectLink {
-        font-size: 13.5px;
-        bottom: 0px;
-        text-decoration: none;
-        text-align: left;
+      .flex-wrapper2 {
+        height: 100%;
+        display: flex;
         float: left;
-        background-color: rgb(224, 13, 119);
-        padding: 15.25px;
-        display: inline;
-        a {
-          text-decoration: none;
-          color: black;
-          height: 0;
-          width: 0;
-        }
-        a:visited {
-          text-decoration: none;
-          color: black;
-        }
-        img {
-          color: red;
+        width: 95%;
+        .fa-github-square {
           height: 100%;
-          width: 100%;
-          float: left;
         }
-        div {
-          margin-left: 15px;
+        .fa-github:hover {
+          color: rgb(224, 13, 119);
+        }
+        .modalProjectLink {
+          font-size: 13.5px;
+          text-decoration: none;
+          text-align: left;
+          background-color: rgb(224, 13, 119);
+          padding: 15.25px;
+        }
+      }
+      .modal-form {
+        // position: relative;
+        .close-btn {
+          transition: transform 0.25s, opacity 0.25s;
+          opacity: 0.7;
+          cursor: pointer;
+          font-size: 3em;
+          font-family: serif;
+          height: 50px;
           float: right;
+        }
+        .close-btn:before {
+          content: "\d7";
+        }
+        .close-btn:hover {
+          opacity: 1;
+          transform: rotate(90deg);
         }
       }
     }
   }
-}
-
-.fa-github {
-  float: left;
-  margin-left: 20px;
-}
-
-.fa-github:hover {
-  color: rgb(224, 13, 119);
-}
-
-.modal-form {
-  position: relative;
-}
-.close-btn {
-  transition: transform 0.25s, opacity 0.25s;
-  opacity: 0.7;
-  cursor: pointer;
-  font-size: 3em;
-  font-family: serif;
-  float: right;
-}
-.close-btn:before {
-  content: "\d7";
-}
-.close-btn:hover {
-  opacity: 1;
-  transform: rotate(90deg);
 }
 
 /*# sourceMappingURL=modal.css.map */

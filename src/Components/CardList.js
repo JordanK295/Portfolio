@@ -5,7 +5,7 @@ import "./CardList.css"
 export default function CardList() {
 
     return (
-        <div className="card-list-container">
+        <div className="card-list-container" id="projects">
             <h1>PROJECTS</h1>
             <div className="card-row-container wrapper">
                 <Card cardImageURL=""

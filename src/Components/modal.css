@@ -50,63 +50,36 @@
 }
 
 .modalContainer .modalBottom .bottom-bar {
-  height: 46.5px;
+  height: 36.5px;
   width: 100%;
 }
 
-.modalContainer .modalBottom .bottom-bar button {
-  float: right;
-}
-
-.modalContainer .modalBottom .bottom-bar .modalProjectLink {
-  font-size: 13.5px;
-  bottom: 0px;
-  text-decoration: none;
-  text-align: left;
-  float: left;
-  background-color: #e00d77;
-  padding: 15.25px;
-  display: inline;
-}
-
-.modalContainer .modalBottom .bottom-bar .modalProjectLink a {
-  text-decoration: none;
-  color: black;
-  height: 0;
-  width: 0;
-}
-
-.modalContainer .modalBottom .bottom-bar .modalProjectLink a:visited {
-  text-decoration: none;
-  color: black;
-}
-
-.modalContainer .modalBottom .bottom-bar .modalProjectLink img {
-  color: red;
+.modalContainer .modalBottom .bottom-bar .flex-wrapper2 {
   height: 100%;
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   float: left;
+  width: 95%;
 }
 
-.modalContainer .modalBottom .bottom-bar .modalProjectLink div {
-  margin-left: 15px;
-  float: right;
+.modalContainer .modalBottom .bottom-bar .flex-wrapper2 .fa-github-square {
+  height: 100%;
 }
 
-.fa-github {
-  float: left;
-  margin-left: 20px;
-}
-
-.fa-github:hover {
+.modalContainer .modalBottom .bottom-bar .flex-wrapper2 .fa-github:hover {
   color: #e00d77;
 }
 
-.modal-form {
-  position: relative;
+.modalContainer .modalBottom .bottom-bar .flex-wrapper2 .modalProjectLink {
+  font-size: 13.5px;
+  text-decoration: none;
+  text-align: left;
+  background-color: #e00d77;
+  padding: 15.25px;
 }
 
-.close-btn {
+.modalContainer .modalBottom .bottom-bar .modal-form .close-btn {
   -webkit-transition: opacity 0.25s, -webkit-transform 0.25s;
   transition: opacity 0.25s, -webkit-transform 0.25s;
   transition: transform 0.25s, opacity 0.25s;
@@ -115,14 +88,15 @@
   cursor: pointer;
   font-size: 3em;
   font-family: serif;
+  height: 50px;
   float: right;
 }
 
-.close-btn:before {
+.modalContainer .modalBottom .bottom-bar .modal-form .close-btn:before {
   content: "\d7";
 }
 
-.close-btn:hover {
+.modalContainer .modalBottom .bottom-bar .modal-form .close-btn:hover {
   opacity: 1;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);

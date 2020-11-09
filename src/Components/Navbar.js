@@ -32,7 +32,7 @@ class Navbar extends React.Component {
           <div className="navbar">
             <div className="links">
               <div><a style={{color:'#E94C72'}} href="" className="home">HOME</a></div>
-              <div><a href="" className="about">ABOUT</a></div>
+              <div><a href="/CardList" className="about">ABOUT</a></div>
               <div><a href="" className="portfolio">PORTFOLIO</a></div>
               <div><a href="" className="contact">CONTACT</a></div>
           </div>
