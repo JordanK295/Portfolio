@@ -1,17 +1,35 @@
-.card-list-container {
+.projects-container-wrapper .card-list-container {
+  text-align: center;
+  scroll-margin-top: 50px;
+}
+
+.projects-container-wrapper .card-list-container .project-title {
+  display: inline-block;
+  text-align: center;
+  color: #3b3b3b;
   margin-top: 50px;
 }
 
-.card-row-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 90%;
+.projects-container-wrapper .card-list-container .bar {
   margin: auto;
-  padding: 10px;
+  margin-top: 10px;
+  height: 5px;
+  background-color: #e73c7e;
+  width: 50%;
 }
 
-.card-list-container h1 {
-  text-align: center;
-  color: rgb(99, 99, 99);
+.projects-container-wrapper .card-list-container .card-row-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 10px;
 }
+/*# sourceMappingURL=CardList.css.map */

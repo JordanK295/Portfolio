@@ -90,6 +90,7 @@
   font-family: serif;
   height: 50px;
   float: right;
+  line-height: 1;
 }
 
 .modalContainer .modalBottom .bottom-bar .modal-form .close-btn:before {

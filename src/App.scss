@@ -1,0 +1,20 @@
+@import "./Components/variables";
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+::selection {
+  background: $bright-color3; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $bright-color3; /* Gecko Browsers */
+}

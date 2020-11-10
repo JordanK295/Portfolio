@@ -21,8 +21,8 @@ const Card = (props) => {
   return (
     
       <div>
-        <div class="card card-container"><img src={ cardImageURL } />
-          <div class="info">
+        <div className="card card-container"><img src={ cardImageURL } />
+          <div className="info">
             <h1>{ cardHeader }</h1>
             <p>{ cardLanguages }</p>
             <button onClick={() => setShowModal(true)}>Learn More</button>

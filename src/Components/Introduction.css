@@ -24,6 +24,7 @@
   font-size: xx-large;
   font-weight: 300;
   margin: 0;
+  cursor: default;
 }
 
 .introduction-container .introduction-text p span {
@@ -60,23 +61,15 @@
   margin-left: 20px;
 }
 
-.div-button:hover {
+.introduction-container .introduction-text .div-button:hover {
   color: grey;
   background-color: white;
   border: solid white 3px;
 }
 
-.div-button:hover .icon-container {
+.introduction-container .introduction-text .div-button:hover .icon-container {
   -webkit-transform: rotateZ(90deg);
           transform: rotateZ(90deg);
-}
-
-.block-spacer {
-  display: block;
-  height: 100vh;
-  width: 100vw;
-  z-index: -1;
-  margin: 0;
 }
 
 @-webkit-keyframes gradient {
@@ -103,7 +96,7 @@
   }
 }
 
-.icon-container {
+.introduction-container .introduction-text .div-button:hover .icon-container {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }

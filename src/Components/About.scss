@@ -5,27 +5,35 @@
   width: 100vw;
   overflow-x: hidden;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
+  scroll-margin-top: 50px;
+  .bar {
+    margin: auto;
+    margin-top: 10px;
+    height: 5px;
+    background-color: $bright-color2;
+    width: 50%;
+  }
   h1 {
     display: inline-block;
     margin: auto;
     color: $base-color2;
-    .bar {
-      height: 5px;
-      background-color: $base-color2;
-      width: 100%;
-    }
+    margin-top: 60px;
   }
   h2 {
     color: $base-color;
     font-size: 1.5em;
-    max-width: 50%;
+    max-width: 35%;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 70px;
     margin-bottom: 15px;
+    .bar {
+      height: 2px;
+    }
   }
   .flexxer {
     margin: auto;
+    margin-top: 80px;
     display: flex;
     width: 90%;
     justify-content: space-evenly;
@@ -33,19 +41,70 @@
     text-align: center;
     .bio {
       width: 40%;
-      h3 {
+      .bio-text {
+        margin-top: 50px;
+        text-align: justify;
+        .my-cv {
+          display: flex;
+          justify-content: space-evenly;
+          font-size: larger;
+          cursor: pointer;
+          svg {
+            margin-right: 15px;
+          }
+        }
+        .my-cv:hover {
+          color: $bright-color2;
+        }
+      }
+      h2 {
+        color: $base-color2;
+        display: inline-block;
+        margin: auto;
         color: $base-color2;
       }
       p {
         color: $base-color;
       }
+      .div-button {
+        margin: auto;
+        margin-top: 40px;
+        border: solid $bright-color2 3px;
+        cursor: pointer;
+        width: 280px;
+        a {
+          text-decoration: none;
+        }
+        p {
+          display: inline-block;
+          font-size: 22px;
+          transform: none;
+          color: black;
+        }
+        .icon-container {
+          display: inline-block;
+          margin-right: 20px;
+        }
+      }
+      .div-button:hover {
+        color: white;
+        background-color: $bright-color2;
+        border: solid $bright-color2 3px;
+        p {
+          color: white;
+        }
+      }
     }
     .tech-stack {
       width: 40%;
-      h3 {
+      h2 {
+        color: $base-color2;
+        display: inline-block;
+        margin: auto;
         color: $base-color2;
       }
       .icons-container {
+        margin-top: 35px;
         width: 100%;
         display: flex;
         justify-content: space-evenly;

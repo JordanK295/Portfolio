@@ -27,38 +27,30 @@
   display: -ms-flexbox;
   display: flex;
   height: 50px;
-  width: 500px;
+  width: 320px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-left: 5%;
+  margin-left: 2%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .navbar .links div {
-  width: 25%;
-}
-
-.navbar .links div a {
   margin: 0;
   position: relative;
   top: 33%;
   color: #474747;
   text-decoration: none;
   font-weight: 600;
+  cursor: pointer;
 }
 
-.navbar .links div a:visited {
+.navbar .links div div:visited {
   text-decoration: none;
   color: grey;
-}
-
-.Nav {
-  z-index: 2;
-}
-
-.Nav__logo {
-  margin-top: 12px;
 }
 
 .Nav__black {

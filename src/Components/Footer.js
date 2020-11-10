@@ -9,9 +9,9 @@ export default function Footer() {
     <div className="footer">
       <div className="wrapper">
         <div className="icon-footer-container">
-          <div><FontAwesomeIcon icon={faFilePdf} size="8x" /></div>
-          <div><FontAwesomeIcon icon={faGithub} size="8x" /></div>
-          <div><FontAwesomeIcon icon={faEnvelope} size="8x" /></div>
+          <div><FontAwesomeIcon icon={faFilePdf} size="2x" /></div>
+          <div><FontAwesomeIcon icon={faGithub} size="2x" /></div>
+          <div><FontAwesomeIcon icon={faEnvelope} size="2x" /></div>
         </div>
           <p className="copyright">JORDAN KAY<span> © 2020</span></p>
       </div>

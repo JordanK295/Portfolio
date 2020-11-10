@@ -3,7 +3,7 @@
 .footer {
   width: 100%;
   height: 150px;
-  background-color: $base-color;
+  background-color: $base-color-2;
   position: relative;
   .wrapper {
     // height: 80px;
@@ -21,11 +21,12 @@
       height: 30px;
       display: flex;
       justify-content: space-evenly;
+      color: white;
       div {
-        svg {
-          height: 100%;
-          color: white;
-        }
+        cursor: pointer;
+      }
+      div:hover {
+        color: $bright-color2;
       }
     }
     p {

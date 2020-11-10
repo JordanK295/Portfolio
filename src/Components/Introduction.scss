@@ -19,6 +19,7 @@
       font-size: xx-large;
       font-weight: 300;
       margin: 0;
+      cursor: default;
       span {
         color: white;
         font-weight: 600;
@@ -46,39 +47,27 @@
         margin-left: 20px;
       }
     }
+    .div-button:hover {
+      color: grey;
+      background-color: white;
+      border: solid white 3px;
+      .icon-container {
+        transform: rotateZ(90deg);
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      .icon-container {
+        transition: all 0.4s ease;
+      }
+    }
   }
-}
-
-.div-button:hover {
-  color: grey;
-  background-color: white;
-  border: solid white 3px;
-}
-
-.div-button:hover .icon-container {
-  transform: rotateZ(90deg);
-}
-
-.block-spacer {
-  display: block;
-  height: 100vh;
-  width: 100vw;
-  z-index: -1;
-  margin: 0;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.icon-container {
-  transition: all 0.4s ease;
 }

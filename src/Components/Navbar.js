@@ -1,46 +1,49 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Navbar.css"
 
-class Navbar extends React.Component {
-  listener = null;
-  state = {
-    nav:false
+
+const Navbar = () => {
+
+  const scrollToHome = () => {
+    const introductionPage = document.getElementById("introduction-container")
+    introductionPage.scrollIntoView();
   }
-  componentDidMount() {
-     window.addEventListener("scroll", this.handleScroll);
-   }
-   componentWillUnmount() {
-      window.removeEventListener('scroll');
-    }
-   handleScroll= () => {
-     if (window.pageYOffset > 977) {
-         if(!this.state.nav){
-           this.setState({ nav: true });
-         }
-     }else{
-         if(this.state.nav){
-           this.setState({ nav: false });
-         }
-     }
 
-   }
+  const scrollToProjects = () => {
+    const projectPage = document.getElementById("projects-container-wrapper")
+    projectPage.scrollIntoView();
+  }
 
-  render(){
+  const scrollToAbout = () => {
+    const aboutPage = document.getElementById("about")   
+    aboutPage.scrollIntoView();
+  }
+
+  const handleScroll = () => {
+    var navBar = document.getElementById("navbar");
+    var projectTitle = document.getElementById("project-title");
+    const shouldFix = window.pageYOffset > 1009;
+    projectTitle.style.marginTop = shouldFix ? "102px" : "50px";
+    navBar.className = shouldFix ? "navbar Nav__black" : "navbar";
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => handleScroll());;
+  }, [])
+
   return (
     <div>
-      <div className={`Nav ${this.state.nav && 'Nav__black'}`}>
-          <div className="navbar">
-            <div className="links">
-              <div><a style={{color:'#E94C72'}} href="" className="home">HOME</a></div>
-              <div><a href="/CardList" className="about">ABOUT</a></div>
-              <div><a href="" className="portfolio">PORTFOLIO</a></div>
-              <div><a href="" className="contact">CONTACT</a></div>
+        <div className="navbar" id="navbar">
+          <div className="links">
+            <div style={{ color: '#E94C72' }} onClick={scrollToHome}>HOME</div>
+            <div onClick={scrollToProjects}>PROJECTS</div>
+            <div onClick={scrollToAbout}>ABOUT</div>
           </div>
-          {/* <div className="opacity"></div> */}
-            {/* <div className="line"></div> */}
         </div>
-      </div>
     </div>
-  );}
+  )
 }
+
+
+
 export default Navbar

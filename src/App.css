@@ -1,6 +1,27 @@
-a:visited {
-  text-decoration: none;
+html {
+  scroll-behavior: smooth;
 }
+
 a {
   text-decoration: none;
 }
+
+a:visited {
+  text-decoration: none;
+}
+
+::-moz-selection {
+  background: #23a6d5;
+  /* WebKit/Blink Browsers */
+}
+
+::selection {
+  background: #23a6d5;
+  /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: #23a6d5;
+  /* Gecko Browsers */
+}
+/*# sourceMappingURL=App.css.map */

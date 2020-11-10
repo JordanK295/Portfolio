@@ -1,0 +1,29 @@
+@import "./variables";
+.projects-container-wrapper {
+  .card-list-container {
+    text-align: center;
+    scroll-margin-top: 50px;
+    .project-title {
+      display: inline-block;
+      text-align: center;
+      color: $base-color2;
+      margin-top: 50px;
+    }
+    .bar {
+      margin: auto;
+      margin-top: 10px;
+      height: 5px;
+      background-color: $bright-color2;
+      width: 50%;
+    }
+    .card-row-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      width: 90%;
+      margin: auto;
+      margin-top: 50px;
+      padding: 10px;
+    }
+  }
+}
