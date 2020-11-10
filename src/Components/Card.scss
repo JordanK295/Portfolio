@@ -1,6 +1,4 @@
-* {
-  box-sizing: border-box;
-}
+@import "./variables";
 
 .wrapper {
   display: flex;
@@ -34,7 +32,6 @@
       transform: translateY(0px);
     }
   }
-
   &:before {
     content: "";
     position: absolute;
@@ -49,7 +46,6 @@
     transition: 0.5s;
     opacity: 0;
   }
-
   img {
     width: 100%;
     height: 100%;
@@ -59,7 +55,6 @@
     left: 0;
     border-radius: 15px;
   }
-
   .info {
     position: relative;
     z-index: 3;
@@ -67,7 +62,7 @@
     opacity: 0;
     transform: translateY(30px);
     transition: 0.5s;
-
+    margin: auto;
     h1 {
       color: white;
       margin: 0px;
@@ -85,118 +80,32 @@
       border: none;
       border-radius: 3px;
       background: white;
-      color: black;
+      color: $base-color2;
       font-weight: bold;
       cursor: pointer;
       transition: 0.4s ease;
 
       &:hover {
-        background: dodgerblue;
+        background: $bright-color3;
         color: white;
       }
     }
   }
 }
 
-// .card-container {
-//   height: 300px;
-//   width: 390px;
-//   background-color: grey;
-//   position: relative;
-//   padding: 20px;
-//   img {
-//     position: absolute;
-//     width: 100%;
-//     height: 100%;
-//     top: 0;
-//     left: 0;
-//     object-fit: cover;
-//     /* transition: all 0.3s ease-in-out; */
-//   }
-// }
-
-// .wrapper {
-//   display: flex;
-//   width: 90%;
-//   justify-content: space-around;
-// }
-
-// .card {
-//   width: 280px;
-//   height: 360px;
-//   border-radius: 15px;
-//   padding: 1.5rem;
-//   background: white;
-//   position: relative;
-//   display: flex;
-//   align-items: flex-end;
-//   transition: 0.4s ease-out;
-//   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-//   overflow-y: hidden;
-// }
-// .card:hover {
-//   transform: translateY(20px);
-// }
-// .card:hover:before {
-//   opacity: 1;
-// }
-// .card:hover .info {
-//   opacity: 1;
-//   transform: translateY(0px);
-// }
-// .card:before {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   display: block;
-//   width: 100%;
-//   height: 100%;
-//   border-radius: 15px;
-//   background: rgba(0, 0, 0, 0.6);
-//   z-index: 2;
-//   transition: 0.5s;
-//   opacity: 0;
-// }
-// .card img {
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   border-radius: 15px;
-// }
-// .card .info {
-//   position: relative;
-//   z-index: 3;
-//   color: white;
-//   opacity: 0;
-//   transform: translateY(30px);
-//   transition: 0.5s;
-// }
-// .card .info h1 {
-//   margin: 0px;
-// }
-// .card .info p {
-//   letter-spacing: 1px;
-//   font-size: 15px;
-//   margin-top: 8px;
-// }
-// .card .info button {
-//   padding: 0.6rem;
-//   outline: none;
-//   border: none;
-//   border-radius: 3px;
-//   background: white;
-//   color: black;
-//   font-weight: bold;
-//   cursor: pointer;
-//   transition: 0.4s ease;
-// }
-// .card .info button:hover {
-//   background: dodgerblue;
-//   color: white;
-// }
-
-// MODAL
+@media screen and (max-width: 768px) {
+  .card {
+    max-width: 58.5vw;
+    max-height: 39vw;
+    .info {
+      max-width: 58.5vw;
+      max-height: 39vw;
+      h1 {
+        font-size: small;
+      }
+      p {
+        font-size: xx-small;
+      }
+    }
+  }
+}

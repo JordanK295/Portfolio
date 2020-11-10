@@ -16,8 +16,10 @@ const Modal = (props) => {
     return (
         <div>
             <div className="opaque-background" onClick={setShowModalFalse}></div>
-                <div className="modalContainer">
+            <div className="modalContainer">
+                <div className="image-container">
                     <img className="modalImageURL" src={modalImageURL} alt="" />
+                </div>
                     <div className="modalBottom">
                         <div className="modalHeader">{modalHeader}</div>
                         <div className="modalDescription">{modalDescription}</div>

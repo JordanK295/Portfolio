@@ -25,15 +25,21 @@
   opacity: 1;
 }
 
-.modalContainer .modalImageURL {
+.modalContainer .image-container {
   height: 450px;
   width: 700px;
   -o-object-fit: cover;
   object-fit: cover;
 }
 
+.modalContainer .image-container .modalImageURL {
+  width: 100%;
+  height: 100%;
+}
+
 .modalContainer .modalBottom {
   padding: 11px 20px 20px 20px;
+  background-color: grey;
 }
 
 .modalContainer .modalBottom .modalHeader {
@@ -101,5 +107,47 @@
   opacity: 1;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+@media screen and (max-width: 768px) {
+  .modalContainer {
+    max-width: 582px;
+    max-height: 374px;
+  }
+  .modalContainer .image-container {
+    max-width: 582px;
+    max-height: 374px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .modalContainer {
+    max-width: 420px;
+    max-height: 270px;
+  }
+  .modalContainer .image-container {
+    max-width: 420px;
+    max-height: 270px;
+  }
+  .modalContainer .modalBottom .bottom-bar .flex-wrapper2 {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .modalContainer {
+    max-width: 280px;
+    max-height: 180px;
+  }
+  .modalContainer .modalBottom .modalDescription {
+    font-size: 12px;
+  }
+  .modalContainer .modalBottom .modalHeader {
+    font-size: 22px;
+  }
+  .modalContainer .image-container {
+    max-width: 280px;
+    max-height: 180px;
+  }
 }
 /*# sourceMappingURL=modal.css.map */

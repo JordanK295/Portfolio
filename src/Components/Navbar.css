@@ -60,4 +60,10 @@
   z-index: 1;
   width: 100vw;
 }
+
+@media screen and (max-width: 768px) {
+  .navbar .links {
+    margin: auto;
+  }
+}
 /*# sourceMappingURL=Navbar.css.map */

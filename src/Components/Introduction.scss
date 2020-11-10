@@ -3,7 +3,7 @@
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   margin: 0;
   overflow-x: hidden;
   .introduction-text {
@@ -69,5 +69,11 @@
         transition: all 0.4s ease;
       }
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .introduction-text {
+    min-width: 275px;
   }
 }

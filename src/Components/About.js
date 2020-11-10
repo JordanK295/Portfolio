@@ -8,7 +8,7 @@ export default function About() {
   return (
     <div className="about" id="about">
       <h1>ABOUT ME<div className="bar"></div></h1>
-      <h2>I'm a junior software developer with a passion for solving problems with efficient solutions.</h2>
+      <h2 className="one-liner">I'm a junior software developer with a passion for solving problems with efficient solutions.</h2>
       <div className="flexxer">
         <div className="bio">
           <h2>BIO<div className="bar"></div></h2>

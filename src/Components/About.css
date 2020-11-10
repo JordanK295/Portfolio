@@ -1,5 +1,5 @@
 .about {
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
   text-align: center;
   margin-bottom: 200px;
@@ -24,10 +24,10 @@
 .about h2 {
   color: #808080;
   font-size: 1.5em;
-  max-width: 35%;
   margin: auto;
   margin-top: 70px;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .about h2 .bar {
@@ -54,7 +54,7 @@
 }
 
 .about .flexxer .bio .bio-text {
-  margin-top: 50px;
+  margin-top: 40px;
   text-align: justify;
 }
 
@@ -150,8 +150,46 @@
 
 .about .flexxer .tech-stack .icons-container div svg {
   width: 140px;
-  padding: 15px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .about .flexxer .tech-stack {
+    margin: auto;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .about .flexxer .tech-stack .icons-container div svg {
+    width: 50px;
+    height: 100%;
+    padding: 3px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    margin-bottom: 50px;
+  }
+  .about .one-liner {
+    width: 90%;
+  }
+  .about .flexxer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+  }
+  .about .flexxer .bio {
+    margin: auto;
+    margin-top: 20px;
+    width: 90%;
+  }
+  .about .flexxer .bio .div-button {
+    width: 200px;
+  }
+  .about .flexxer .bio .div-button p {
+    font-size: medium;
+  }
 }
 /*# sourceMappingURL=About.css.map */

@@ -20,7 +20,7 @@ const Card = (props) => {
 
   return (
     
-      <div>
+      <div className="card-modal-wrapper">
         <div className="card card-container"><img src={ cardImageURL } />
           <div className="info">
             <h1>{ cardHeader }</h1>
