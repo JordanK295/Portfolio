@@ -54,6 +54,7 @@
   font-size: 22px;
   -webkit-transform: none;
           transform: none;
+  cursor: pointer;
 }
 
 .introduction-container .introduction-text .div-button .icon-container {

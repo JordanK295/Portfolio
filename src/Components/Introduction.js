@@ -7,7 +7,6 @@ import "./Introduction.css"
 export default function Introduction() {
   const scrollToProjects = () => {
     const projectPage = document.getElementById("projects")
-    console.log(projectPage)
     projectPage.scrollIntoView();
   }
   
