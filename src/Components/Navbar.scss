@@ -1,3 +1,5 @@
+@import "./variables";
+
 .navbar {
   height: 52px;
   width: 100vw;
@@ -25,10 +27,10 @@
     margin-left: 2%;
     justify-content: space-evenly;
     div {
+      height: 50%;
       margin: 0;
       position: relative;
       top: 33%;
-      color: rgb(71, 71, 71);
       text-decoration: none;
       font-weight: 600;
       cursor: pointer;
@@ -37,10 +39,21 @@
         color: grey;
       }
     }
+    div:hover {
+      color: $bright-color2;
+    }
   }
 }
 
-.Nav__black {
+.highlighted {
+  color: $bright-color2;
+}
+
+.un-highlighted {
+  color: $base-color2;
+}
+
+.Nav__fixed {
   position: fixed;
   top: 0;
   left: 0;
