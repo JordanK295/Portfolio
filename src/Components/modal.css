@@ -33,6 +33,8 @@
 }
 
 .modalContainer .image-container .modalImageURL {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -133,8 +135,6 @@
 @media screen and (max-width: 768px) {
   .modalContainer {
     max-width: 582px;
-    max-height: 374px;
-    top: 40%;
   }
   .modalContainer .image-container {
     max-width: 582px;
@@ -145,7 +145,6 @@
 @media screen and (max-width: 630px) {
   .modalContainer {
     max-width: 420px;
-    max-height: 270px;
   }
   .modalContainer .image-container {
     max-width: 420px;
@@ -159,7 +158,6 @@
 @media screen and (max-width: 500px) {
   .modalContainer {
     max-width: 280px;
-    max-height: 180px;
   }
   .modalContainer .modalBottom .modalDescription {
     font-size: 12px;
@@ -170,6 +168,37 @@
   .modalContainer .image-container {
     max-width: 280px;
     max-height: 180px;
+  }
+}
+
+.scale-in-center {
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=modal.css.map */

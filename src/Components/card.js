@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "./Card.css"
 import Modal from "./Modal"
+import $ from "jquery"
 
 const Card = (props) => {
     const {
@@ -19,6 +20,12 @@ const Card = (props) => {
   
   const setShowModalFalse = () => setShowModal(false)
 
+  const modalEntranceAnimation = () => {
+    console.log("working")
+    setShowModal(true);
+    $("modalContainer").addClass("scale-in-center")
+  }
+
   return (
     
       <div className="card-modal-wrapper">
@@ -26,7 +33,7 @@ const Card = (props) => {
           <div className="info">
             <h1>{ cardHeader }</h1>
             <p>{ cardLanguages }</p>
-            <button onClick={() => setShowModal(true)}>Learn More</button>
+            <button onClick={() => modalEntranceAnimation()}>Learn More</button>
           </div>
         </div>
 
