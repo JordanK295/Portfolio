@@ -1,7 +1,6 @@
 @import "./variables";
 
 .about {
-  // height: 100vh;
   width: 100%;
   overflow-x: hidden;
   text-align: center;
@@ -81,9 +80,10 @@
           transform: none;
           color: black;
         }
-        .icon-container {
+        .envelope-icon {
           display: inline-block;
           margin-right: 20px;
+          color: black;
         }
       }
       .div-button:hover {
@@ -93,7 +93,19 @@
         p {
           color: white;
         }
+        svg {
+          color: white;
+        }
       }
+      // a {
+      //   div {
+      //     div {
+      //       svg {
+      //         color: black;
+      //       }
+      //     }
+      //   }
+      // }
     }
     .tech-stack {
       width: 40%;

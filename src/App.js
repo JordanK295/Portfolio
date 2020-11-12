@@ -1,9 +1,9 @@
 import './App.css';
-import { BrowserRouter, Route } from "react-router-dom"
+import { BrowserRouter } from "react-router-dom"
 import Helmet from "react-helmet"
 import Introduction from "./Components/Introduction"
 import Navbar from "./Components/Navbar"
-import CardList from "./Components/CardList"
+import Projects from "./Components/Projects"
 import About from "./Components/About"
 import Footer from "./Components/Footer"
 
@@ -22,7 +22,7 @@ function App() {
         </Helmet>
         <Introduction />
         <Navbar />
-        <CardList />
+        <Projects />
         <About />
         <Footer />
       </div>

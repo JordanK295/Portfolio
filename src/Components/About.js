@@ -19,12 +19,12 @@ export default function About() {
             </div>
             <p>My developer skills are self-taught, alongside guidance from friends in the web development community. The driving force behind my personal development has been my love of learning new skills (which developing is never short of), and the creative elements of building a project.</p>
           </div>
-          <div className="div-button">
-            <div className="icon-container">
+          <a href="mailto:jordankay295@gmail.com"><div className="div-button">
+            <div className="envelope-icon">
               <FontAwesomeIcon icon={faEnvelope} size="1x" />
             </div>
             <p>Let's work together</p>
-          </div>
+          </div></a>
         </div>
         <div className="tech-stack">
           <h2>TECH STACK<div className="bar"></div></h2>

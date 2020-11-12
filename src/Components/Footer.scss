@@ -6,7 +6,6 @@
   background-color: $base-color-2;
   position: relative;
   .wrapper {
-    // height: 80px;
     width: 300px;
     margin: 0;
     position: absolute;
@@ -23,6 +22,7 @@
       justify-content: space-evenly;
       color: white;
       div {
+        color: white;
         cursor: pointer;
       }
       div:hover {

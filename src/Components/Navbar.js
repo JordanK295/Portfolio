@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react'
 import "./Navbar.css"
 
-
 const Navbar = () => {
-
+  // Scroll to for each section
   const scrollToHome = () => {
     const introductionPage = document.getElementById("introduction-container")
     introductionPage.scrollIntoView();
@@ -19,16 +18,20 @@ const Navbar = () => {
     aboutPage.scrollIntoView();
   }
 
-  const handleScroll = () => {
+  // Creating the sticky navbar effect and filling the gap with margin when it swaps position to fixed
+
+  const handleScroll = (sticky) => {
     var navBar = document.getElementById("navbar");
     var projectTitle = document.getElementById("project-title");
-    const shouldFix = window.pageYOffset > 1009;
+    const shouldFix = window.pageYOffset > sticky;
     projectTitle.style.marginTop = shouldFix ? "102px" : "50px";
     navBar.className = shouldFix ? "navbar Nav__black" : "navbar";
   }
 
   useEffect(() => {
-    window.addEventListener("scroll", () => handleScroll());;
+    var navBar = document.getElementById("navbar");
+    var sticky = navBar.offsetTop;
+    window.addEventListener("scroll", () => handleScroll(sticky));
   }, [])
 
   return (
@@ -43,7 +46,5 @@ const Navbar = () => {
     </div>
   )
 }
-
-
 
 export default Navbar

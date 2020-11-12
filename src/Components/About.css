@@ -108,9 +108,10 @@
   color: black;
 }
 
-.about .flexxer .bio .div-button .icon-container {
+.about .flexxer .bio .div-button .envelope-icon {
   display: inline-block;
   margin-right: 20px;
+  color: black;
 }
 
 .about .flexxer .bio .div-button:hover {
@@ -120,6 +121,10 @@
 }
 
 .about .flexxer .bio .div-button:hover p {
+  color: white;
+}
+
+.about .flexxer .bio .div-button:hover svg {
   color: white;
 }
 

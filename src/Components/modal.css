@@ -39,13 +39,14 @@
 
 .modalContainer .modalBottom {
   padding: 11px 20px 20px 20px;
-  background-color: grey;
+  background-color: white;
 }
 
 .modalContainer .modalBottom .modalHeader {
   font-size: 29px;
   display: block;
   text-align: left;
+  color: #3b3b3b;
 }
 
 .modalContainer .modalBottom .modalDescription {
@@ -53,6 +54,7 @@
   text-align: left;
   margin-top: 10px;
   margin-bottom: 30px;
+  color: #808080;
 }
 
 .modalContainer .modalBottom .bottom-bar {
@@ -69,20 +71,39 @@
   width: 95%;
 }
 
-.modalContainer .modalBottom .bottom-bar .flex-wrapper2 .fa-github-square {
+.modalContainer .modalBottom .bottom-bar .flex-wrapper2 a {
   height: 100%;
 }
 
-.modalContainer .modalBottom .bottom-bar .flex-wrapper2 .fa-github:hover {
-  color: #e00d77;
+.modalContainer .modalBottom .bottom-bar .flex-wrapper2 .github-div {
+  height: 100%;
+}
+
+.modalContainer .modalBottom .bottom-bar .flex-wrapper2 .fa-github-square {
+  height: 100%;
+  color: #3b3b3b;
+  cursor: pointer;
+}
+
+.modalContainer .modalBottom .bottom-bar .flex-wrapper2 .fa-github-square:hover {
+  color: #23a6d5;
 }
 
 .modalContainer .modalBottom .bottom-bar .flex-wrapper2 .modalProjectLink {
   font-size: 13.5px;
   text-decoration: none;
   text-align: left;
-  background-color: #e00d77;
-  padding: 15.25px;
+  background-color: #23a6d5;
+  padding: 7px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-top: 2px;
+  color: white;
+}
+
+.modalContainer .modalBottom .bottom-bar .flex-wrapper2 .modalProjectLink:hover {
+  background-color: white;
+  color: #23a6d5;
 }
 
 .modalContainer .modalBottom .bottom-bar .modal-form .close-btn {
@@ -113,6 +134,7 @@
   .modalContainer {
     max-width: 582px;
     max-height: 374px;
+    top: 40%;
   }
   .modalContainer .image-container {
     max-width: 582px;

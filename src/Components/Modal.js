@@ -25,21 +25,23 @@ const Modal = (props) => {
                         <div className="modalDescription">{modalDescription}</div>
                     <div className="bottom-bar">
                         <div className="flex-wrapper2">
-                            <div className="modalProjectLink">
-                                <a href={modalProjectLink} target="_blank">
+                            <a href={modalProjectLink} target="_blank" rel="noreferrer">
+                                <div className="modalProjectLink">                              
                                     <div>VIEW SITE</div>
-                                </a>
-                            </div>
-                            <FontAwesomeIcon icon={ faGithubSquare } size="4x"/>
-                            <div className="modalGitHubLink">{modalGitHubLink}</div>
-                            </div>
-                            <div className="modal-form">
-                                <span onClick={setShowModalFalse} className="close-btn"></span>
-                            </div>
+                                </div>
+                            </a>
+                            <a href={modalGitHubLink} target="_blank" rel="noreferrer">
+                                <div className="github-div"><FontAwesomeIcon icon={ faGithubSquare } size="4x"/></div>
+                                <div className="modalGitHubLink"></div>
+                            </a>
+                        </div>
+                        <div className="modal-form">
+                            <span onClick={setShowModalFalse} className="close-btn"></span>
                         </div>
                     </div>
-                </div>
+                    </div>
             </div>
+        </div>
     )
 }
 

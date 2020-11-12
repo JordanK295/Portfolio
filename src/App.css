@@ -21,16 +21,13 @@ a:visited {
 
 ::-moz-selection {
   background: #23a6d5;
-  /* WebKit/Blink Browsers */
 }
 
 ::selection {
   background: #23a6d5;
-  /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
   background: #23a6d5;
-  /* Gecko Browsers */
 }
 /*# sourceMappingURL=App.css.map */

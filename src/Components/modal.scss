@@ -1,3 +1,5 @@
+@import "./variables";
+
 .opaque-background {
   position: fixed;
   padding: 0;
@@ -37,19 +39,19 @@
   }
   .modalBottom {
     padding: 11px 20px 20px 20px;
-    // display: block;
-    // position: relative;
-    background-color: grey;
+    background-color: white;
     .modalHeader {
       font-size: 29px;
       display: block;
       text-align: left;
+      color: $base-color2;
     }
     .modalDescription {
       font-size: 14.5px;
       text-align: left;
       margin-top: 10px;
       margin-bottom: 30px;
+      color: $base-color;
     }
     .bottom-bar {
       height: 36.5px;
@@ -59,18 +61,34 @@
         display: flex;
         float: left;
         width: 95%;
-        .fa-github-square {
+        a {
           height: 100%;
         }
-        .fa-github:hover {
-          color: rgb(224, 13, 119);
+        .github-div {
+          height: 100%;
+        }
+        .fa-github-square {
+          height: 100%;
+          color: $base-color2;
+          cursor: pointer;
+        }
+        .fa-github-square:hover {
+          color: $bright-color3;
         }
         .modalProjectLink {
           font-size: 13.5px;
           text-decoration: none;
           text-align: left;
-          background-color: rgb(224, 13, 119);
-          padding: 15.25px;
+          background-color: $bright-color3;
+          padding: 7px;
+          padding-left: 14px;
+          padding-right: 14px;
+          margin-top: 2px;
+          color: white;
+        }
+        .modalProjectLink:hover {
+          background-color: white;
+          color: $bright-color3;
         }
       }
       .modal-form {
@@ -101,6 +119,7 @@
   .modalContainer {
     max-width: 582px;
     max-height: 374px;
+    top: 40%;
     .image-container {
       max-width: 582px;
       max-height: 374px;
