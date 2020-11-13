@@ -21,7 +21,6 @@ const Card = (props) => {
   const setShowModalFalse = () => setShowModal(false)
 
   const modalEntranceAnimation = () => {
-    console.log("working")
     setShowModal(true);
     $("modalContainer").addClass("scale-in-center")
   }

@@ -15,7 +15,7 @@ export default function Introduction() {
       <div className="introduction-container" id="introduction-container">
       <div className="introduction-text">
         <p>Hello, I'm <span>Jordan Kay</span>.</p>
-          <p>I'm a junior software developer.</p>
+          <p>I'm a junior developer.</p>
           <div onClick={scrollToProjects} className="div-button">
             <p>View my work</p>
             <div className="icon-container">

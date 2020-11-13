@@ -26,7 +26,7 @@ export default function Projects() {
                         modalImageURL="/Assets/to-do.png"
                         modalHeader="To-Do List"
                         modalDescription="The To-Do List is a simple application used for listing tasks, marking their completion and filtering between them. This was my first react application, and a great foundation for components, states and props."
-                        modalProjectLink=""
+                        modalProjectLink="https://todolist.jordankay.me/"
                         modalGitHubLink="https://github.com/JordanK295/To-Do-List"
                     />
                     <Card cardImageURL="/Assets/ISS-Tracker-thumbnail.png"

@@ -70,6 +70,11 @@
   cursor: pointer;
 }
 
+.about .flexxer .bio .bio-text .my-cv a div {
+  text-decoration: none;
+  color: black;
+}
+
 .about .flexxer .bio .bio-text .my-cv svg {
   margin-right: 15px;
 }

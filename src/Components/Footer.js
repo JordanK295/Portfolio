@@ -9,7 +9,7 @@ export default function Footer() {
     <div className="footer">
       <div className="wrapper">
         <div className="icon-footer-container">
-          <a href="" target="_blank" rel="noreferrer"><div><FontAwesomeIcon icon={faFilePdf} size="2x" /></div></a>
+          <a href="/Assets/Jordan_Kay-Junior_Software_Developer_CV.pdf" target="_blank" rel="noreferrer"><div><FontAwesomeIcon icon={faFilePdf} size="2x" /></div></a>
           <a href="https://github.com/JordanK295" target="_blank" rel="noreferrer"><div><FontAwesomeIcon icon={faGithub} size="2x" /></div></a>
           <a href="mailto:jordankay295@gmail.com" target="_blank" rel="noreferrer"><div><FontAwesomeIcon icon={faEnvelope} size="2x" /></div></a>
         </div>

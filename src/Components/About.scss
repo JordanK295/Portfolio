@@ -48,6 +48,12 @@
           display: flex;
           justify-content: space-evenly;
           font-size: larger;
+          a {
+            div {
+              text-decoration: none;
+              color: black;
+            }
+          }
           cursor: pointer;
           svg {
             margin-right: 15px;
